@@ -1,0 +1,30 @@
+RAPID
+=====
+
+Copyright (c) 2026 RAPID contributors.
+
+This repository is the publication artifact for the RAPID paper. It contains
+the RAPID reference implementation of the control logic (`src/rapid/`), the
+experiment data behind the paper's tables and measurement figures (`data/`), and
+the scripts that rebuild those tables and figures from the released data
+(`scripts/`). All material in this repository is distributed under the MIT
+License; see LICENSE.
+
+RAPID is an independent method: it combines the Congestion-Aware Adaptive
+Controller (CAAC) with Interruptible Proactive Draft Generation (IPDG). The
+SGLang-based measurement harness and the early SpecEdge-based runtime prototype
+used during development are not part of this repository. SpecEdge is one of the
+eight comparison baselines in the paper's evaluation, alongside Fixed Budget,
+Cost-Model (Online Speculative Decoding), OPT-Tree, SVIP, EdgeLLM, PEARL and
+Sequential; the SpecEdge project is at https://github.com/kaist-ina/specedge.
+
+External assets
+---------------
+
+SGLang and its dependencies, the model weights used in the experiments
+(Qwen3-0.6B/1.7B/14B/32B, Llama-3.1-8B-Instruct, Llama-3.2-1B-Instruct), and the
+benchmark prompt corpora (C4, WikiText, MT-Bench, OASST, SpecBench) are external
+assets. They are not redistributed in this repository and remain subject to
+their own upstream licenses and access conditions. The benchmark dataset
+identities are recorded in README.md and in the dataset labels of
+`data/runs.csv`.
