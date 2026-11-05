@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use RAPID, please cite this software repository; the accompanying manuscript describes the method and the evaluation."
+title: "RAPID: Resource-Aware Proactive and Interruptible Speculative Decoding for Edge-Cloud Large Language Model Inference"
+type: software
+version: 0.1.0
+license: "MIT"
+authors:
+  - name: "RAPID contributors"
+repository-code: "https://github.com/jianpingpei/RAPID"
+url: "https://github.com/jianpingpei/RAPID"
+abstract: "Publication artifact for RAPID, a method for edge-cloud speculative decoding of large language models under changing edge load. RAPID combines the Congestion-Aware Adaptive Controller (CAAC), which sets the draft length from measured local token latency and recent acceptance, with Interruptible Proactive Draft Generation (IPDG), which stops an invalid proactive branch at the next tree-expansion boundary and reconciles the draft tree and its KV-cache state. The artifact contains the framework-free reference implementation of the control logic, the complete experiment data behind Tables 3-12 and Figures 5 and 8-11 of the manuscript, and the scripts that rebuild those tables and figures from the released data."
+keywords:
+  - speculative decoding
+  - edge-cloud inference
+  - large language models
+  - proactive draft generation
+  - adaptive draft length control
